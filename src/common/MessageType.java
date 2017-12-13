@@ -7,11 +7,11 @@ package common;
 
 /**
  * Possible message types for Networking
- * 
+ *
  * @author Griffone
  */
 public enum MessageType {
-    
+
     MT_CONNECT,         // New connection message clinet->server
     MT_GUESS,           // New guess clinet->server
     MT_NEW_GAME,        // Start new game client->server

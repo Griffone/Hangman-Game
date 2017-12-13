@@ -130,7 +130,7 @@ public class Game {
                 this.guess = sb.toString();
                 if (!isInValidState()) {
                     newRound();
-                    return new ServerAnswer(getSnapshot(), "Good job!");
+                    return new ServerAnswer(getSnapshot(), "Good job getting \"" + word + "\"!");
                 }
                 return new ServerAnswer(getSnapshot(), "Hit!");
             } else {

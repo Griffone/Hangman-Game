@@ -6,7 +6,6 @@
 package server.network;
 
 import common.Definitions;
-import common.GameStateSnapshot;
 import common.Message;
 import common.MessageType;
 import common.ServerAnswer;

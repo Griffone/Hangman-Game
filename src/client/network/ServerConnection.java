@@ -6,10 +6,10 @@
 package client.network;
 
 import common.Definitions;
-import common.GameStateSnapshot;
 import common.Message;
 import common.MessageType;
 import common.ServerAnswer;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;

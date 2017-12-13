@@ -8,21 +8,22 @@ package common;
 import java.io.Serializable;
 
 /**
+ * A DTE of a GameState.
  *
  * @author Griffone
  */
 public class GameStateSnapshot implements Serializable {
-    
+
     public final int points;
     public final String word;
     public final int remainingLives;
-    
+
     public GameStateSnapshot(int points, String word, int remainingLives) {
         this.points = points;
         this.word = word;
         this.remainingLives = remainingLives;
     }
-    
+
     public static GameStateSnapshot fromString(String string) {
         if (string.startsWith("{\"points\":")) {
             int endIndex = string.indexOf(", ");
@@ -37,14 +38,10 @@ public class GameStateSnapshot implements Serializable {
         return null;
     }
 
-    public GameStateSnapshot() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
     /**
      * Transforms the GameState into a json-like string
-     * 
-     * @return 
+     *
+     * @return
      */
     @Override
     public String toString() {
